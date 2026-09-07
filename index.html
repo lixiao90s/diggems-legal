@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DigGems (找到萌宠 / Find Cute Pets) — Queens-style animal puzzle. Place pets with row, column, and color rules. / 找动物 Queens 解谜休闲游戏。">
+  <title>DigGems — Find Cute Pets | 找到萌宠</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="game.css">
+  <link rel="icon" href="assets/mascot.png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/mascot.png" alt="DigGems" class="logo-cat">
+        <span>DigGems</span>
+      </a>
+      <nav class="header-nav">
+        <a href="index.html#features">Features / 玩法</a>
+        <a href="index.html#preview">Preview / 预览</a>
+        <a href="legal.html">Legal / 法律</a>
+        <a href="support.html">Support / 支持</a>
+        <a href="privacy.html">Privacy / 隐私</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-tag">Find Animals · Queens Puzzle / 找动物 · Queens 解谜</p>
+        <h1>Find Cute Pets / 找到萌宠<br><span class="highlight">DigGems</span></h1>
+        <p class="hero-desc">DigGems is a relaxing Queens-style puzzle: place exactly one pet per row, column, and color region — and never let pets touch, even diagonally.</p>
+        <p class="hero-desc">DigGems（找到萌宠）是一款轻松的 Queens 解谜：每行、每列、每个色块恰好一只萌宠，且萌宠不能八邻相邻。</p>
+        <div class="hero-actions">
+          <a href="#download" class="btn btn-primary">Coming Soon / 即将上架</a>
+          <a href="#preview" class="btn btn-secondary">See How to Play / 看看怎么玩</a>
+        </div>
+      </div>
+      <div class="hero-mascot">
+        <img src="assets/mascot.png" alt="DigGems mascot" class="cat-float">
+        <div class="hero-demo-grid" aria-hidden="true">
+          <div class="demo-cell" style="--cell:1;background:#f7a8c4"><img src="assets/mascot.png" alt=""></div>
+          <div class="demo-cell" style="--cell:2;background:#a8d4f7"><span class="mark-x">×</span></div>
+          <div class="demo-cell" style="--cell:3;background:#b8e8c8"><img src="assets/animal2.png" alt=""></div>
+          <div class="demo-cell" style="--cell:4;background:#a8d4f7"><img src="assets/animal3.png" alt=""></div>
+          <div class="demo-cell" style="--cell:5;background:#f7d4a8"><span class="mark-x">×</span></div>
+          <div class="demo-cell" style="--cell:6;background:#d4b8f0"><img src="assets/animal4.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section features">
+    <h2 class="section-title">Game Features / 游戏特色</h2>
+    <div class="feature-grid">
+      <article class="feature-card">
+        <div class="feature-icon">
+          <img src="assets/mascot.png" alt="">
+          <img src="assets/animal2.png" alt="">
+        </div>
+        <h3>Simple Rules / 规则清晰</h3>
+        <p>One pet per row, column, and color — no 8-direction adjacency.</p>
+        <p>每行、每列、每个色块一只萌宠，且不能八邻相邻。</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon">
+          <img src="assets/animal3.png" alt="">
+          <img src="assets/animal4.png" alt="">
+          <img src="assets/animal5.png" alt="">
+        </div>
+        <h3>Cute Pets / 萌宠棋盘</h3>
+        <p>Colorful boards and adorable animals — every level is a chill brain teaser.</p>
+        <p>彩色色块与可爱萌宠，每一关都是轻松益智体验。</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon"><img src="assets/animal5.png" alt=""></div>
+        <h3>Leaderboards / 排行榜</h3>
+        <p>Climb progress and weekly challenge boards across platforms.</p>
+        <p>通关总榜与每周挑战，多端一起冲分。</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="preview" class="section preview">
+    <h2 class="section-title">How to Play / 怎么玩</h2>
+    <div class="preview-board" aria-hidden="true">
+      <div class="board-row">
+        <div class="board-cell" style="background:#f7a8c4"><img src="assets/mascot.png" alt=""></div>
+        <div class="board-cell" style="background:#f7a8c4"><span class="mark-x">×</span></div>
+        <div class="board-cell highlight" style="background:#a8d4f7"><img src="assets/animal2.png" alt=""></div>
+        <div class="board-cell" style="background:#a8d4f7"><span class="mark-x">×</span></div>
+      </div>
+      <div class="board-row">
+        <div class="board-cell" style="background:#b8e8c8"><span class="mark-x">×</span></div>
+        <div class="board-cell highlight" style="background:#b8e8c8"><img src="assets/animal3.png" alt=""></div>
+        <div class="board-cell" style="background:#f7d4a8"><span class="mark-x">×</span></div>
+        <div class="board-cell" style="background:#f7d4a8"><img src="assets/animal4.png" alt=""></div>
+      </div>
+    </div>
+    <ol class="howto-steps">
+      <li><strong>Mark / 标记</strong> — Tap or swipe to place X on empty cells / 单击或滑过格子标记 ×</li>
+      <li><strong>Place / 放置</strong> — Double-tap to reveal a pet (or lose a heart on miss) / 双击开格：是萌宠则显示，否则扣命</li>
+      <li><strong>Clear / 通关</strong> — Satisfy all Queens constraints to finish the level / 满足全部约束即可通关</li>
+    </ol>
+  </section>
+
+  <section id="download" class="section download">
+    <div class="download-card">
+      <img src="assets/mascot.png" alt="DigGems" class="download-cat">
+      <div>
+        <h2>Play DigGems Soon / 即将开玩 DigGems</h2>
+        <p>Free · iOS / Android / WeChat Mini Game planned / 免费 · 计划上架 iOS、Android 与微信小游戏</p>
+        <a href="support.html" class="btn btn-primary btn-lg">Support / 联系支持</a>
+        <p class="download-note">App Store &amp; Google Play links will appear here when published. / 上架后将在此更新商店链接。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/mascot.png" alt="" class="footer-cat">
+        <span>DigGems · Find Cute Pets</span>
+      </div>
+      <div class="footer-links">
+        <a href="legal.html">Legal / 法律文档</a>
+        <a href="privacy.html">Privacy / 隐私政策</a>
+        <a href="terms.html">Terms / 用户协议</a>
+        <a href="support.html">Support / 技术支持</a>
+      </div>
+      <div class="footer-contact">
+        <a href="mailto:393889869@qq.com">393889869@qq.com</a>
+        <span>·</span>
+        <a href="tel:+8618782960484">18782960484</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 DigGems. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
